@@ -1,0 +1,243 @@
+1. Login
+2. Change Password
+3. update Profile Pic
+4. List of recent orders - Order details with customer location on map
+5. Admin can Accept OR Deny the request
+6. Old Order history
+
+====================================================================================
+          BASE URL : http://52.10.61.17/rest_el/apis/admin/v1/
+====================================================================================
+
+1. Login
+ * url - /login
+ * method - POST
+ * params - username (mandatory), password (optional), device_id(mandatory), device_token(mandatory), device_type(mandatory), ipaddress(mandatory)
+ * username  -  email / mobile
+ * devide_type -> A / I -> A -> Android, I -> Iphone
+
+2. Change Password
+ * url - /changepassword
+ * method - POST
+ * params - oldpassword (mandatory), newpassword (mandatory)
+ * header Params - username (mandatory), password (mandatory)
+ * username -> email / mobile
+
+3. Update Profile Pic
+ * url - /updateprofilepic
+ * method - POST
+ * params - profile_pic(mandatory)
+ * Header Params - username (mandatory), password (mandatory)
+ * username -> email / mobile
+
+4. Get Orders 
+ * url - /orders/:status/:type
+ * status -> N->NEW, A->APPROVED, D->DECLINED, CC->CANCELLED BY CUSTOMER, P->PREPARED, AD->ASSIGNED TO DRIVER, OD->OUT FOR DELIVERY, DL->DELIVERED, PU->PICKEDUP BY CUSTOMER
+ * type -> S->SCHEDULED, C->CURRENT, A->ALL
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+http://52.10.61.17/rest_el/apis/admin/v1/orders/N/C
+{
+    "code": 0,
+    "error": false,
+    "message": "Orders List",
+    "data": [
+        {
+            "id": "29",
+            "invoice_id": "EL-1-1-29",
+            "delivery_man_id": "0",
+            "distance": "10",
+            "amount": "500",
+            "tax_amount": "100",
+            "type": "D",
+            "order_type": "S",
+            "orderedat": "1504531806",
+            "customer": {
+                "id": "1",
+                "firstname": "manuadfff",
+                "lastname": null,
+                "mobile_code": "+91",
+                "mobile": "9983950555",
+                "address": "sodala, metro station",
+                "latitude": "26.5465",
+                "longitude": "75.5545",
+                "profile_pic": ""
+            },
+            "delivery_man": null
+        }
+    ]
+}
+
+5. Get Order Details
+ * url - /order/:order_id
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+http://52.10.61.17/rest_el/apis/admin/v1/order/1
+{
+    "code": 0,
+    "error": false,
+    "message": "Order Data",
+    "data": [
+        {
+            "id": "1",
+            "invoice_id": "INV000001",
+            "distance": "5",
+            "amount": "25",
+            "tax_amount": "5",
+            "type": "D",
+            "order_type": "C",
+            "orderedat": "1504267899",
+            "customer": {
+                "firstname": "manoj",
+                "lastname": "sharma",
+                "mobile_code": "+91",
+                "mobile": "9983950555",
+                "address": "sodala, metro station",
+                "latitude": "26.5465",
+                "longitude": "75.5545",
+                "profile_pic": "http://52.10.61.17/rest_el/uploaded/customer_pic/thumb/test.jpg"
+            },
+            "delivery_man": {
+                "firstname": null,
+                "lastname": null,
+                "mobile_code": null,
+                "mobile": null,
+                "profile_pic": "http://52.10.61.17/rest_el/uploaded/deliveryman_pic/thumb/"
+            },
+            "tax": [
+                {
+                    "title": "GST",
+                    "tax": "18",
+                    "tax_amount": "25"
+                }
+            ],
+            "items": [
+                {
+                    "avg_rating": "5",
+                    "is_nonveg": "N",
+                    "is_new": "Y",
+                    "is_featured": "Y",
+                    "item_name": "DELUXE VEGGIE",
+                    "thumb": "http://52.10.61.17/rest_el/uploaded/item_pic/thumb/pizza2.jpg",
+                    "price_name": "Small",
+                    "unit_price": "199",
+                    "extra_price": "10",
+                    "attribute_price": "10",
+                    "quantity": "2",
+                    "total_price": "418",
+                    "data": "json data will be here"
+                }
+            ]
+        }
+    ]
+}
+
+6. Get Delivery men List
+ * url - /deliverymen/:status
+ * status -> FREE, ALL, BUZY
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+http://52.10.61.17/rest_el/apis/admin/v1/deliverymen/ALL
+{
+    "code": 0,
+    "error": false,
+    "message": "Deliver men List",
+    "data": [
+        {
+            "id": "1",
+            "firstname": "Test Boy",
+            "lastname": "test",
+            "mobile_code": null,
+            "mobile": "8561887456",
+            "email": "testboy@gmail.com",
+            "address": "test address",
+            "gender": null,
+            "thumb": "",
+            "big": ""
+        }
+    ]
+}
+
+7. Get Delivery man Assigned Orders
+ * url - /delivermanorders/:delivery_man_id
+ * method - GET
+ * Header Params - username (mandatory), password (mandatory)
+
+8. Update Order Status
+ * url - /changestatus
+ * method - POST
+ * params - order_id(mandatory), status(mandatory), delivery_man_id(mandatory), device_id(mandatory), device_type(mandatory), ip_address(mandatory)
+ * device_type -> I / A / W
+ * delivery_man_id default 0
+ * status:- A->APPROVED, D->DECLINED, P->PREPARED, AD->ASSIGNED TO DRIVER, PU->PICKEDUP BY CUSTOMER
+ * (RE-ASSIGN WILL BE HANDELLED WITH THIS API , JUST CALL ASSIGNED TO DRIVER (AD))
+ * header Params - username(mandatory), password(mandatory)
+{
+    "code": 0,
+    "error": false,
+    "message": "Order status successfully changed"
+}
+
+9. Get page content
+ * url - /page_content/:pagename
+ * method - GET
+ * pagename : TERMS_AND_CONDITIONS, PRIVACY_POLICY, ABOUT_US
+
+10. Logout
+ * url - /logout
+ * method - POST
+ * params - devcie_id(mandatory),
+ * Header Params - username (mandatory), password (mandatory)
+ * username -> email / mobile
+
+-- DATE 18-11-2017 -------------------
+
+11. Get Dashboard Data
+ * url - /dashboard
+ * method - GET
+ * Header Params - username (mandatory), password (mandatory)
+PP->PAYMENT PENDING, N->NEW, A->APPROVED, D->DECLINED, CC->CANCELLED BY CUSTOMER, P->PREPARED, AD->ASSIGNED TO DRIVER, OD->OUT FOR DELIVERY, DL->DELIVERED, PU->PICKEDUP BY CUSTOMER
+
+12. Get Event List
+ * url - /events/:textsearch/:status/:eventfromdate/:eventtodate/:postedfromdate/:postedtodate/:pageno
+ * method - POST
+ * textsearch (mandatory), status(mandatory), eventfromdate(mandatory), eventtodate(mandatory), postedfromdate(mandatory), postedtodate(mandatory), pageno (mandatory)
+ * textsearch, status = 0 (zero)
+ * status == N (NEW), R (RESPONDED)
+ * eventfromdate, eventtodate, postedfromdate, postedtodate = DEFAULT 0
+ * eventfromdate = selected date with 00:00:01 (timestamp) 
+ * eventtodate = selected date with 23:59:59 (timestamp)
+ * postedfromdate = selected date with 00:00:01 (timestamp) 
+ * postedtodate = selected date with 23:59:59 (timestamp)
+ * pageno = DEFAULT 0 then all recods will return
+ * Header Params - username (mandatory), password (mandatory)
+
+13. Get Event Details
+ * url - /event/:event_id
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+
+14. send reply on customer's event request
+ * url - /eventreply
+ * method - POST
+ * params - event_id(mandatory), reply(mandatory), comment(mandatory)
+ * header Params - username(mandatory), password(mandatory)
+
+-- MANOJ -- 20-11-2017-
+NEED TO REPLACE "orders/:status/:type" (API NO 4) API WITH THIS API ONLY IN HISTORY OR DELIVERED orders
+Get Orders with post method
+ * url - /orders
+ * params : status(mandatory), type(mandatory), delivery(mandatory), 
+ * textsearch(mandatory), orderfromdate(mandatory), ordertodate(mandatory), createdfromdate(mandatory), createdtodate(mandatory), pageno(mandatory)
+ * status -> N->NEW, A->APPROVED, D->DECLINED, CB->CANCELLED BY BRANCH, CC->CANCELLED BY CUSTOMER, P->PREPARED, AD->ASSIGNED TO DRIVER, OD->OUT FOR DELIVERY, DL->DELIVERED, PU->PICKEDUP BY CUSTOMER
+ * type -> S->SCHEDULED, C->CURRENT, A->ALL
+ * delivery -> P->PICK UP, D->DELIVERY, A->ALL
+ * textsearch, orderfromdate, ordertodate, createdfromdate, createdtodate, pageno = DEFAULT VALUE 0
+ * IF pageno = then all records will be returned
+ * orderfromdate = selected date with 00:00:01 (timestamp) 
+ * ordertodate = selected date with 23:59:59 (timestamp)
+ * createdfromdate = selected date with 00:00:01 (timestamp) 
+ * createdtodate = selected date with 23:59:59 (timestamp)
+ * method - POST
+ * Header Params - username(mandatory), password(mandatory)
+

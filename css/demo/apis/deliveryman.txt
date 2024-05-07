@@ -1,0 +1,122 @@
+1. Login
+2. Change Password
+3. update Profile Pic
+4. Update driver location
+5. List of recently assigned orders - with assigned time
+6. Order details with customer location on map
+7. Old deleiveed history
+
+
+====================================================================================
+          BASE URL : http://52.10.61.17/rest_el/apis/deliveryman/v1/
+====================================================================================
+
+1. Delivery man Login
+ * url - /login
+ * method - POST
+ * params - username (mandatory), password (optional), device_id(mandatory), device_token(mandatory), device_type(mandatory), ipaddress(mandatory)
+ * username  -  email / mobile
+ * devide_type -> A / I -> A -> Android, I -> Iphone
+
+2. Change Password
+ * url - /changepassword
+ * method - POST
+ * params - oldpassword (mandatory), newpassword (mandatory)
+ * header Params - username (mandatory), password (mandatory)
+ * username -> email / mobile
+
+3. Update Profile Pic
+ * url - /updateprofilepic
+ * method - POST
+ * params - profile_pic(mandatory)
+ * Header Params - username (mandatory), password (mandatory)
+ * username -> email / mobile
+
+4. Update deliver yman Location
+ * url - /updatelocation
+ * method - POST
+ * params - latitude(mandatory), longitude(mandatory)
+ * Header params - username(mandatory),password(mandatory)
+ * username -> email / mobile
+
+5. Update Duty status
+ * url - /onlineoffline/:status
+ * method - GET
+ * status :- N - offline, Y- online
+ * Header Params - username (mandatory), password (mandatory)
+ * username -> email / mobile
+
+6. Get Orders
+ * url - /orders/:status
+ * status -> AD->ASSIGNED TO DRIVER, OD->OUT FOR DELIVERY, DL->DELIVERED BY THIS DRIVER
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+http://52.10.61.17/rest_el/apis/deliveryman/v1/orders/AD
+{
+    "code": 0,
+    "error": false,
+    "message": "Categories List",
+    "data": [
+        {
+            "id": "1",
+            "invoice_id": "INV000001",
+            "delivery_man_id": "1",
+            "distance": "5",
+            "amount": "25",
+            "tax_amount": "5",
+            "orderedat": "1504267899",
+            "customer": {
+                "firstname": "manoj",
+                "lastname": "sharma",
+                "mobile_code": "+91",
+                "mobile": "9983950555",
+                "address": "sodala, metro station",
+                "latitude": "26.5465",
+                "longitude": "75.5545",
+                "profile_pic": "http://52.10.61.17/rest_el/uploaded/customer_pic/thumb/test.jpg"
+            }
+        }
+    ]
+}
+
+7. Get Order Details
+ * url - /order/:order_id
+ * method - GET
+ * Header Params - username (mandatory), password (mandatory)
+http://52.10.61.17/rest_el/apis/deliveryman/v1/order/1
+
+8. Update Order Status
+ * url - /changestatus
+ * method - POST
+ * params - order_id(mandatory), invoice_id(mandatory), customer_id(mandatory), status(mandatory), device_id(mandatory), device_type(mandatory), ip_address(mandatory)
+ * status -> AD->ASSIGNED TO DRIVER, OD->OUT FOR DELIVERY, DL->DELIVERED BY THIS DRIVER
+ * device_type -> I / A / W
+ * header Params - username (mandatory), password (mandatory)
+
+9. Get page content
+ * url - /page_content/:pagename
+ * method - GET
+ * pagename : TERMS_AND_CONDITIONS, PRIVACY_POLICY, ABOUT_US
+
+10. Logout
+ * url - /logout
+ * method - POST
+ * params - devcie_id(mandatory),
+ * Header Params - username (mandatory), password (mandatory)
+ * username -> email / mobile
+
+-- MANOJ -- 20-11-2017-
+NEED TO REPLACE "orders/:status" (API NO 6) API WITH THIS API ONLY IN HISTORY OR DELIVERED orders
+11. Get Orders with post method -- filters implemented (text search, from date, to date)
+ * url - /orders
+ * params: status(mandatory), textsearch(mandatory), fromdate(mandatory), todate(mandatory), pageno(mandatory)
+ * status -> AD->ASSIGNED TO DRIVER, OD->OUT FOR DELIVERY, DL->DELIVERED BY THIS DRIVER
+ * fromdate = selected date with 00:00:01 (timestamp) 
+ * todate = selected date with 23:59:59 (timestamp)
+ * ALL DEFAULTVALUES = 0
+ * IF pageno==0 then all records will be return
+ * METHOD - POST
+ * Header Params - username(mandatory), password(mandatory)
+
+
+

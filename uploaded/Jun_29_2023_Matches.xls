@@ -1,0 +1,1343 @@
+
+    <form action="https://my11option.com/admin/reports//action" method="post" accept-charset="utf-8" id="table_form" class="form-inline form">    <div class="row">
+        <div class="col-lg-12">
+            
+            <section class="panel">
+                <header class="panel-heading">
+				                 </header>
+                <div class="panel-body">
+               </div>
+                <div class="panel-body">
+                    <section id="no-more-tables" class="table responsive">
+                        <table class="table table-bordered table-striped table-condensed cf">
+                            <thead class="cf">
+                                <tr>                              
+									<th>Matches date</th>
+									<th>Total Matches</th>
+									<th>Credited Amount</th>
+									<th>Debited Amount</th>
+                                    <th>Refund Amount</th>
+									<th>Earnings</th>
+                                    <th>Tax Amounts</th>
+                                                                    </tr>
+                            </thead>
+                            <tbody>
+                             <tr>
+                                        <td data-title="Matches Date"> 
+                                            01/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            636.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,625.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -989.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            01/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            4                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            559.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            742.28										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -183.28										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            02/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,522.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,366.37										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -844.37										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            02/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            5                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,788.20                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,025.29										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -237.09										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            03/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            631.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,564.24										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -933.24										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            03/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            665.75                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            861.59										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -195.84										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            04/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            702.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,535.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -833.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            04/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            4                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,980.80                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,277.42										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -296.62										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            05/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            905.50                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,935.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,029.50										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            05/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            264.60                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            322.07										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -57.47										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            06/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,910.50                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,253.76										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,343.26										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            06/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            5                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,543.05                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,730.07										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -187.02										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            07/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            11.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -11.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            07/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,774.75                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,205.45										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,430.70										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            07/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            6                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,769.75                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,053.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -283.25										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            08/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,721.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,721.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            08/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,097.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,143.56										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -46.56										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            08/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            3                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            546.66                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            740.07										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -193.41										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            09/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,110.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,110.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            09/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,445.50                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,219.04										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -773.54										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            09/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            8                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,431.65                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,225.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -793.35										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            10/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,111.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,111.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            10/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            3,357.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,994.14										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            362.86										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            10/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            6                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            907.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,401.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -494.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            11/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,111.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,111.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            11/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,523.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,302.76										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            220.24										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            11/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            439.25                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            691.99										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -252.74										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            12/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,136.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,110.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            637.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,611.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            12/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,769.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,298.76										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            470.24										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            12/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            361.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            496.25										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -135.25										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            13/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            980.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,806.80										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -826.80										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            13/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,316.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,199.52										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -883.52										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            13/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            11                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,598.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,495.62										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -897.62										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            14/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            492.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,553.55										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,061.55										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            14/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,091.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,251.59										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,160.59										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            14/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            8                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,799.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,215.07										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -416.07										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            15/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,176.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,023.04										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,847.04										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            15/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,181.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,689.52										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -508.52										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            15/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            11                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,715.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,716.04										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,001.04										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            16/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            933.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,754.86										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,821.86										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            16/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,513.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,892.52										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,379.52										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            16/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            7                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,314.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,906.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -592.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            17/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            591.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,478.46										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -887.46										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            17/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,963.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,277.52										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,314.52										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            18/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,767.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,152.98										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            614.02										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            18/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,480.40                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,832.52										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,352.12										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            19/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,113.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,992.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,879.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            19/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,481.40                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,886.77										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,405.37										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            19/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            9                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,787.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,330.45										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -543.45										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            20/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,424.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,932.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -508.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            20/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,973.50                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            6,499.66										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -3,526.16										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            20/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            13                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,380.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,148.01										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -768.01										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            21/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            6,324.91                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            7,521.27										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,196.36										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            21/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,018.50                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            5,495.90										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -3,477.40										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            21/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            11                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,119.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,685.61										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -566.61										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            22/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            8,268.13                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            7,603.66										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            664.47										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            22/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            13                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,405.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,330.44										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -925.44										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            23/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            3,450.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,765.33										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            684.67										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            23/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,223.50                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,637.14										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,413.64										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            23/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            10                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,772.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,704.90										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -932.90										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            24/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,466.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,384.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -918.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            24/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,448.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            4,046.76										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,598.76										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            24/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            10                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,312.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,059.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -747.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            25/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,483.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            4,092.12										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,609.12										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            25/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            5                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            933.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,337.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -404.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            26/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,833.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,465.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,632.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            26/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,450.50                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            4,082.28										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,631.78										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            26/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            8                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,367.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,876.45										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -509.45										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            27/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            3,204.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,566.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -362.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            27/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            8                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,642.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,994.62										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -352.62										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            28/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            1,226.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            2,756.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,530.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            28/06/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            5                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            986.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            1,265.01										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -279.01										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            29/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            3,534.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            5,721.14										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -2,187.14										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            29/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            1                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,333.50                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,845.87										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -1,512.37										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            30/04/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            2,934.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            3,290.00										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -356.00										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                            <tr>
+                                        <td data-title="Matches Date"> 
+                                            31/05/2023                                        </td>
+                                        <td data-title="Total Matches"> 
+                                            2                                        </td>
+                                        <td data-title="Credited Amount"> 
+                                            724.00                                        </td>
+                                        <td data-title="Debited Amount"> 
+                                            796.83										</td>
+                                        <td data-title="Refund Amount"> 
+                                            0.00                                        </td>
+                                        <td data-title="Earnings"> 
+                                            -72.83										</td>
+                                        <td data-title="Tax Amounts"> 
+                                            0.00                                        </td>
+                                        	
+                                    </tr>
+                                                      <tr>
+							<td>
+								Total
+                            </td>
+                            
+							<td>
+							242.00                            </td>
+							<td>
+							129,191.30                            </td>
+							<td>
+							192,539.94                            </td>
+                            <td>
+                            637.00                            </td>
+							<td>
+							-63,985.64                            </td>	
+                            <td>
+                            0.00                            </td>   
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+    </form>
+

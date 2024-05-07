@@ -1,0 +1,101 @@
+<script>
+    $(document).ready(function() {
+        $.validator.addMethod("pass", function(value, element) {
+            return  this.optional(element) || (/.{8,}/.test(value) && /((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,20})/.test(value));
+        }, "Password minimum length must be 8 characters and combination of 1 special character, 1 lowercase character, 1 uppercase character and 1 number.");
+
+        // page date picker feature
+        $( "#datepicker" ).datepicker({            
+            format: 'yyyy-mm-dd',
+            endDate: "1d"});
+           
+<?php
+$country = set_value("country") ? set_value("country") : (isset($user_detail['country']) ? $user_detail['country'] : '');
+$reason = set_value("state") ? set_value("state") : (isset($user_detail['state']) ? $user_detail['state'] : '');
+?>
+        // get all states from countries 
+        $("#country").change(function() {
+            $(".reason").load("<?php echo HTTP_PATH . "admin/home/getstate/" ?>" + $("#country").val() + "/" + "<?php echo $reason; ?>");
+        });
+
+<?php
+if ($reason) {
+    ?>
+                $(".reason").load("<?php echo HTTP_PATH . "admin/home/getstate/" ?><?php echo $country; ?>/" + "<?php echo $reason; ?>");
+    <?php
+}
+?>
+    });
+</script>
+<link rel="stylesheet" type="text/css" href="<?php echo HTTP_PATH; ?>assets/bootstrap-datepicker/css/datepicker.css" />
+<link rel="stylesheet" href="<?php echo HTTP_PATH; ?>assets/data-tables/DT_bootstrap.css" />
+<section id="main-content">
+    <section class="wrapper">
+        <!-- page start-->
+        <div class="row">
+            <div class="col-lg-12">
+                <?php echo $this->breadcrumbs->show(); ?>
+                <section class="panel">
+                    <header class="panel-heading">
+                        Add <?=$name ?>
+                    </header>
+                    <div class="panel-body fltrht"><?php $this->load->view('element/actionMessage'); ?>
+                        <span class="require_sign">Please note that all fields that have an asterisk (*) are required. </span>
+                        <div class=" form">
+                            <?php echo form_open('', array('method' => 'post', 'class' => 'cmxform form-horizontal tasi-form form', 'id' => 'myform')) ?>
+
+							<?php /*
+                            <div class="form-group ">
+                                <label for="game_id" class="control-label col-lg-2">Game name  <span class="red_star">*</span></label>
+                                <div class="col-lg-10">
+			
+                                    <?php
+                               
+									  $opt_all = $this->main_model->cruid_select_array_order("tbl_games", "tbl_games.name,id", $joins = array(), $cond = array("status" => 'A',"is_deleted" => 'N'), $order_by = array(), $limit = '', $order_by_other = array());
+									  
+                                    $opt[''] = "Please Select Game";
+                                    if (!empty($opt_all)) {
+                                        foreach ($opt_all as $datass) {
+                                            $opt[$datass->id] = $datass->name;
+                                        }
+                                    }
+                                    $value = set_value("game_id") ? set_value("game_id") : (isset($user_detail['game_id']) ? $user_detail['game_id'] : '');
+                                    echo form_dropdown('game_id', $opt, $value, 'class="form-control required" id="game_id"');
+                                    ?>
+                                </div>
+                            </div> */ ?>
+                            <div class="form-group ">
+                                <label for="name" class="control-label col-lg-2"><?=$name ?> Name  <span class="red_star">*</span></label>
+                                <div class="col-lg-10">
+                                    <?php
+                                    $value = set_value("name") ? set_value("name") : (isset($user_detail['name']) ? $user_detail['name'] : '');
+                                    $data = array(
+                                        'name' => 'name',
+                                        'id' => 'name',
+                                        'value' => $value,
+                                        'maxlength' => 50,
+                                        'class' => 'form-control required',
+                                        'placeholder' => $name.' Name',
+                                    );
+                                    echo form_input($data);
+                                    echo form_hidden('game_id', '0');
+                                    ?>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button class="btn btn-danger" type="submit">Save</button>
+                                    <button class="btn btn-default" type="reset">Reset</button>
+                                </div>
+                            </div>
+                            <?php echo form_close(); ?>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- page end-->
+    </section>
+</section>
+<script type="text/javascript" src="<?php echo HTTP_PATH; ?>assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>

@@ -1,0 +1,27 @@
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [qsappend,last]
+# RewriteCond %{HTTP:Authorization} ^(.+)$
+# RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+
+
+
+
+
+# RewriteEngine on
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^ index.php [qsappend,last]
+# <IfModule mod_headers.c>
+#    Header always append X-Frame-Options "*"
+#    Header set X-Content-Type-Options nosniff
+#    Header set X-XSS-Protection "1; mode=block"
+#    Header set Access-Control-Allow-Origin "*"
+#    Header set Access-Control-Allow-Methods "*"
+#    Header always edit Set-Cookie (.*) "$1; SameSite=Lax"
+#    Header set Content-Security-Policy "*"
+#    Header set Access-Control-Allow-Headers "*"
+# </IfModule>

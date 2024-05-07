@@ -1,0 +1,76 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="TheTeam11 is a colofull app landing page template">
+<meta name="author" content="TeamXcel">
+<title>How To Play</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!-- Elegant Font Icons CSS -->
+<link rel="stylesheet" href="css/elegant-font-icons.css">
+<!-- Elegant Line Icons CSS -->
+<link rel="stylesheet" href="css/elegant-line-icons.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="css/main.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body class="leagues-bg" data-spy="scroll" data-target="#navmenu" data-offset="70">
+<div class="site-preloader-wrap">
+  <div class="spinner"></div>
+</div>
+<!-- Preloader -->
+
+<div class="sidebar2">
+  <div class="accountDetailsBx2 fantasy-points-system">
+     <div class="tab-panelBx">
+            <!-- Nav tabs category -->
+            <span class="nav nav-tabs faq-cat-tabs" id="tabscreate" style="display: none;">
+            </span>
+            <!-- Tab panes -->
+            <div class="tab-content faq-cat-content" id="data-target"></div>
+     </div>
+     
+  </div>
+ 
+</div>
+
+<!-- jQuery Lib --> 
+<script src="js/vendor/jquery-1.12.4.min.js"></script> 
+   <!-- Bootstrap JS --> 
+<script src="js/vendor/bootstrap.min.js"></script> 
+ 
+<!-- Main JS --> 
+<script src="js/mainsja.js"></script>
+ <script>
+    $('.collapse').on('shown.bs.collapse', function(){
+$(this).parent().find(".fa-plus-circle").removeClass("fa-plus-circle").addClass("fa-minus-circle");
+}).on('hidden.bs.collapse', function(){
+$(this).parent().find(".fa-minus-circle").removeClass("fa-minus-circle").addClass("fa-plus-circle");
+});
+    
+   </script>
+
+<script type="text/javascript">
+   $(document).ready(function(){
+        LoadHowToPlaySytems();
+    });
+</script>
+   
+   
+   
+</body>
+</html>

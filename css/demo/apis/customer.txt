@@ -1,0 +1,756 @@
+
+1. Registration
+2. Login
+3. Forgot Password
+4. Change Password
+5. update Profile Pic
+6. Update Profile Data
+7. Update driver location
+8. List of pending orders
+9. List of all available menu items with sorting and searching feature
+10. Order history
+11. featured menu items
+12. add address
+13. update address
+14. remove address
+15. submit order
+16. make payment
+17. Order details page -- Can see the status, can see the delivery man on map.
+18. Can see all failed, success, cancelled orders.
+
+---------------------------------------------------------------------------------
+
+BASE URL : http://52.10.61.17/rest_el/apis/customer/v1/
+
+1. Get branches List (restaurant)
+ * url - /branches/:lat/:lng
+ * method - GET
+http://52.10.61.17/rest_el/apis/customer/v1/branches/26.90566/75.99999hi
+RESPONSE : {
+    "code": 0,
+    "error": false,
+    "message": "Categories List",
+    "data": [
+        {
+            "id": "2",
+            "name": "Hadappa-vaishali",
+            "mobile": "9983950555",
+            "address": "Global Heart & General Hospital, Jaipur, Rajasthan, India",
+            "latitude": "26.90566",
+            "longitude": "75.738694",
+            "logo": "http://52.10.61.17/rest_el/uploaded/branch_pic/a378108cc373a94b7feb05a494998867.JPG",
+            "address_landmark": null,
+            "distance": 25909.69
+        }
+    ]
+}
+
+2. Get categories List
+ * url - /categories/:branch_id
+ * method - GET
+http://52.10.61.17/rest_el/apis/customer/v1/categories/2
+
+RESPONSE : {
+    "code": 0,
+    "error": false,
+    "message": "Categories List",
+    "data": [
+        {
+            "id": "5",
+            "name": "test1",
+            "description": "test "
+        },
+        {
+            "id": "6",
+            "name": "test2",
+            "description": "test2",
+            "image_thumb": "http://52.10.61.17/rest_el/uploaded/category_pic/thumb/4721469597ea18ce936731000664355c.png",
+            "image_large": "http://52.10.61.17/rest_el/uploaded/category_pic/large/4721469597ea18ce936731000664355c.png"
+        }
+    ]
+}
+
+3. Get featured List
+ * url - /featured/:branch_id
+ * method - GET
+http://52.10.61.17/rest_el/apis/customer/v1/featured/1
+RESPONSE :  {
+    "code": 0,
+    "error": false,
+    "message": "Featured Menu List",
+    "data": [
+        {
+            "id": "1",
+            "name": "DELUXE VEGGIE",
+            "avg_rating": "5",
+            "is_nonveg": "N",
+            "is_new": "Y",
+            "images": [
+                {
+                    "thumb": "http://52.10.61.17/rest_el/uploaded/item_pic/thumb/pizza2.jpg",
+                    "large": "http://52.10.61.17/rest_el/uploaded/item_pic/large/pizza2.jpg"
+                }
+            ],
+            "prices": [
+                {
+                    "name": "Medium",
+                    "price": "$249"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "VEG EXTRAVAGANZA",
+            "avg_rating": "4.5",
+            "is_nonveg": "N",
+            "is_new": "N",
+            "images": [
+                {
+                    "thumb": "http://52.10.61.17/rest_el/uploaded/item_pic/thumb/pizza4.jpg",
+                    "large": "http://52.10.61.17/rest_el/uploaded/item_pic/large/pizza4.jpg"
+                }
+            ],
+            "prices": [
+                {
+                    "name": "MEDIUM",
+                    "price": "$219"
+                }
+            ]
+        }
+    ]
+}
+
+4. Get Menu item List
+ * url - /menus/:catid/:textsearch/:is_new/:is_nonveg/:pageno
+ * method - GET
+ * DEFAULT VALUES => catid=0; textsearch=0; is_new=0; is_nonveg=0; pageno=0;
+ * is_new => Y / N
+ * is_nonveg => Y / N
+http://52.10.61.17/rest_el/apis/customer/v1/menus/1/0/0/0/0
+{
+    "code": 0,
+    "error": false,
+    "message": "Menu List",
+    "pages": 1,
+    "data": [
+        {
+            "id": "1",
+            "name": "DELUXE VEGGIE",
+            "avg_rating": "5",
+            "is_nonveg": "N",
+            "is_new": "Y",
+            "images": [
+                {
+                    "thumb": "http://52.10.61.17/rest_el/uploaded/item_pic/thumb/pizza2.jpg",
+                    "large": "http://52.10.61.17/rest_el/uploaded/item_pic/large/pizza2.jpg"
+                }
+            ],
+            "prices": [
+                {
+                    "name": "Medium",
+                    "price": "$249"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "VEG EXTRAVAGANZA",
+            "avg_rating": "4.5",
+            "is_nonveg": "N",
+            "is_new": "N",
+            "images": [
+                {
+                    "thumb": "http://52.10.61.17/rest_el/uploaded/item_pic/thumb/pizza4.jpg",
+                    "large": "http://52.10.61.17/rest_el/uploaded/item_pic/large/pizza4.jpg"
+                }
+            ],
+            "prices": [
+                {
+                    "name": "MEDIUM",
+                    "price": "$219"
+                }
+            ]
+        }
+    ]
+}
+
+5. Get menu item details
+ * url - /menu/:menuid
+ * method - GET
+http://52.10.61.17/rest_el/apis/customer/v1/menu/1
+{
+    "code": 0,
+    "error": false,
+    "message": "Item details",
+    "data": {
+        "id": "1",
+        "name": "DELUXE VEGGIE",
+        "avg_rating": "5",
+        "is_nonveg": "N",
+        "is_new": "Y",
+        "description": "DELUXE VEGGIE DESCRIPTION",
+        "is_featured": "Y",
+        "images": [
+            {
+                "thumb": "http://52.10.61.17/rest_el/uploaded/item_pic/thumb/pizza1.jpg",
+                "large": "http://52.10.61.17/rest_el/uploaded/item_pic/large/pizza1.jpg",
+                "isdefault": "N"
+            },
+            {
+                "thumb": "http://52.10.61.17/rest_el/uploaded/item_pic/thumb/pizza2.jpg",
+                "large": "http://52.10.61.17/rest_el/uploaded/item_pic/large/pizza2.jpg",
+                "isdefault": "Y"
+            }
+        ],
+        "prices": [
+            {
+                "name": "Small",
+                "price": "$199",
+                "isdefault": "N"
+            },
+            {
+                "name": "Medium",
+                "price": "$249",
+                "isdefault": "Y"
+            },
+            {
+                "name": "Large",
+                "price": "$359",
+                "isdefault": "N"
+            }
+        ],
+        "extras": [
+            {
+                "id": "1",
+                "name": "Paneer",
+                "image_th": "http://52.10.61.17/rest_el/uploaded/extra_pic/thumb/Paneer.jpg",
+                "image_lg": "http://52.10.61.17/rest_el/uploaded/extra_pic/large/Paneer.jpg",
+                "price": "$2",
+                "description": "Paneer desc"
+            }          
+            
+        ]
+    }
+}
+
+6. Get menu item attributes
+ * url - /menuattributes/:menuid
+ * method - GET
+http://52.10.61.17/rest_el/apis/customer/v1/menuattributes/1
+{
+    "code": 0,
+    "error": false,
+    "message": "Menu attributes List",
+    "data": [
+        {
+            "id": "1",
+            "name": "Choose Your Crust",
+            "description": "Choose Your Crust Desc",
+            "type": "S",
+            "options": [
+                {
+                    "id": "1",
+                    "name": "New Hand Tossed",
+                    "price": "0",
+                    "default_selected": "N"
+                },
+                {
+                    "id": "2",
+                    "name": "Fresh Pan Pizza",
+                    "price": "$1",
+                    "default_selected": "Y"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Ingredients",
+            "description": "Ingredients desc",
+            "type": "M",
+            "options": [
+                {
+                    "id": "3",
+                    "name": "Cheese",
+                    "price": "0",
+                    "default_selected": "N"
+                },
+                {
+                    "id": "4",
+                    "name": "Onions",
+                    "price": "$1",
+                    "default_selected": "N"
+                }
+            ]
+        }
+    ]
+}
+
+7. Get countries List
+ * url - /countries
+ * method - GET
+
+8. New Customer Registration
+ * url - /newuser
+ * method - POST
+ * params - mobile (mandatory), mobile_code(optional)
+
+9. Verify OTP
+ * url - /verifyotp
+ * method - POST
+ * params - otp(mandatory), type(mandatory), mobile(mandatory), password(optional), mobile_code(optional)
+ * type -> V / F : V -> Customer verificatin, F -> Forgot Passwordde(optional)
+
+10. Resend OTP
+ * url - /resendotp
+ * method - POST
+ * params - mobile(mandatory), type(mandatory), mobile_code(optional)
+
+11. Forgot Password
+ * url - /forgotpassword
+ * method - POST
+ * params - mobile(mandatory), mobile_code(optional)
+
+12. Customer Registration final step
+ * url - /newuserstep2
+ * method - POST
+ * params - firstname(mandatory), lastname(mandatory), email(mandatory), password(mandatory), mobile(mandatory), mobile_code(mandatory), gender(optional), dob(optional), device_id(mandatory), device_token(mandatory), device_type(A-> Android;I->Iphone mandatory), ipaddress(mandatory), referral_code(optional)
+ * gender -> M / F
+ * dob -> yyyy/mm/dd
+
+13. Customer Login
+ * url - /login
+ * method - POST
+ * params - username (mandatory), password (mandatory), device_id(mandatory), device_token(mandatory), device_type(mandatory), ipaddress(mandatory)
+ * username  -  email / mobile
+ * devide_type -> A / I -> A -> Android, I -> Iphone
+
+14. Change Password
+ * url - /changepassword
+ * method - POST
+ * params - oldpassword (mandatory), newpassword (mandatory)
+ * header Params - username (mandatory), password (mandatory)
+ * username -> email / mobile
+
+15. Update Profile Pic
+ * url - /updateprofilepic
+ * method - POST
+ * params - profile_pic(mandatory)
+ * Header Params - username (mandatory), password (mandatory)
+
+16. Update customer profile
+ * url - /updateprofile
+ * method - POST
+ * params - firstname(mandatory), lastname(mandatory), gender(optional), dob(optional)
+ * gender -> M / F
+ * dob -> yyyy/mm/dd
+ * Header params - username (mandatory), password (mandatory)
+
+17. Add / Update customer Address
+ * url - /address
+ * method - POST
+ * params - firstname(mandatory), lastname(optional), mobile_code(mandatory), mobile(mandatory), address(mandatory), latitude(mandatory), longitude(mandatory), address_id(mandatory)
+ * addreess_id deafult 0
+ * Header params - username (mandatory), password (mandatory)
+
+18. Get address List
+ * url - /address
+ * method - GET
+ * Header params - username (mandatory), password (mandatory)
+
+19. Delete customer address
+ * url - /address/:address_id
+ * method - DELETE
+ * Header params - username (mandatory), password (mandatory)
+
+20. Get address details
+ * url - /address/:address_id
+ * method - GET
+ * Header params - username (mandatory), password (mandatory)
+
+21. Add credit card
+ * url - /card
+ * method - POST
+ * params - firstname(mandatory), lastname(optional), card_number(mandatory), expiry_month(mandatory), expiry_year(mandatory), cvn(mandatory), card_type(mandatory), isdefault(mandatory)
+ * card_type -> VISA / MASTER (NOT DEFINED any string value up to 20 characters)
+ * isdefault -> YES  / NO, deafult 'NO'
+ * Header Params - username (mandatory), password (mandatory)
+
+22. Delete credit card
+ * url - /card/:cardid
+ * method - DELETE
+ * Header params - username(mandatory), password(mandatory)
+
+23. Edit credit card
+ * url - /editcard
+ * method - POST
+ * params - firstname(mandatory), lastname(optional), expiry_month(mandatory), expiry_year(mandatory), cardid(mandatory), hitpaypal(mandatory), isdefault(optional),
+card_number(mandatory)
+ * hitPaypal = 0 / 1
+ * isdefault -> YES  / NO, deafult 'NO'
+ * Header params - username(mandatory), password(mandatory)
+
+24. Get Users Credit Card List 
+ * url - /cards
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+
+25. Get Cart Data 
+ * url - /cart/:branch_id
+ * DEFAULT branch_id = 0 (If need whole data)
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+http://52.10.61.17/rest_el/apis/customer/v1/cart/0  [GET]
+
+26. SAVE / UPDATE / DELETE Cart Data 
+ * url - /cart
+ * params :- branch_id(mandatory), data(mandatory)
+ * data -> json
+ * method - POST
+ * Header Params - username(mandatory), password(mandatory)
+http://52.10.61.17/rest_el/apis/customer/v1/cart [POST]
+
+27. Add / Update Event Request
+ * url - /event
+ * method - POST
+ * params - customer_id(mandatory), name(mandatory), mobile(mandatory), address(mandatory), no_of_guest(mandatory), event_date(mandatory), event(mandatory), event_id(mandatory), device_id(mandatory), device_type(mandatory), ipaddress(mandatory), occasion(mandatory)
+ * customer_id deafult 0
+ * event_id default 0
+ * event_date IN UTC TIMESTAMP
+ * device_type -> 'A-> ANDROID','I->IPHONE'
+ * event -> If user select multiple event then comma separated events name should be there
+
+28. Events List
+ * url - /events
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+http://52.10.61.17/rest_el/apis/customer/v1/events
+{
+    "code": 0,
+    "error": false,
+    "message": "Events Data",
+    "data": [
+        {
+            "id": "2",
+            "name": "manoj sharma",
+            "mobile": "+919983950555",
+            "no_of_guest": "2",
+            "address": "test address",
+            "event": "test event hello new event",
+            "event_date": "1506277800",
+            "reply": null,
+            "reply_at": "0",
+            "created": "1504348379",
+            "status": "N"
+        }
+    ]
+}
+
+29. Get page content
+ * url - /page_content/:pagename
+ * method - GET
+ * pagename : TERMS_AND_CONDITIONS, PRIVACY_POLICY, ABOUT_US
+
+30. Customer Logout
+ * url - /logout
+ * method - POST
+ * params - device_id(mandatory),
+ * Header Params - username(mandatory), password(mandatory)
+
+31.Make Order
+ * url - /order
+ * method - POST
+ * params - branch_id(mandatory), data(mandatory), address_id(mandatory), card_id(mandatory), distance(mandatory),  amount(mandatory), type(mandatory), order_type(mandatory), order_delivery_time(mandatory), comment(optional), tax(mandatory), device_id(mandatory), device_type(mandatory), ipaddress(mandatory), loyalty_points(optional), loyalty_point_value(optional), delivery_charges(mandatory), promocode(optional)
+ * type -> P->PICK UP, D->DELIVERY
+ * order_type -> S->SCHEDULED, C->CURRENT
+ * order_delivery_time -> datetime in UTC timestamp -- If scheduled
+ * device_type -> 'A-> ANDROID','I->IPHONE'
+ * Header Params - username(mandatory), password(mandatory)
+
+
+***LAST APIS : username : manojs@gmail.com / 123456 ****
+***You will get orders with user only. ***
+
+32. Get Orders
+ * url - /orders/:status/:type
+ * status -> R->RUNNUNG (N,A,P,AD,OD), H->HISTORY (DL,PU,CC)
+ * type -> S->SCHEDULED, C->CURRENT, A->ALL
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+http://52.10.61.17/rest_el/apis/customer/v1/orders/R/C
+{
+    "code": 0,
+    "error": false,
+    "message": "Orders List",
+    "data": [
+        {
+            "id": "1",
+            "invoice_id": "INV000001",
+            "delivery_man_id": "0",
+            "distance": "5",
+            "amount": "25",
+            "tax_amount": "5",
+            "type": "D",
+            "order_type": "C",
+            "status": "P",
+            "orderedat": "1504267899",
+            "delivery_man": null
+        }
+    ]
+}
+
+33. Get Order Details
+ * url - /order/:order_id
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+http://52.10.61.17/rest_el/apis/customer/v1/order/29
+{
+    "code": 0,
+    "error": false,
+    "message": "Order Data",
+    "data": [
+        {
+            "id": "29",
+            "invoice_id": "EL-1-1-29",
+            "distance": "10",
+            "amount": "500",
+            "tax_amount": "100",
+            "type": "D",
+            "order_type": "S",
+            "orderedat": "1504531806",
+            "customer": {
+                "id": "1",
+                "firstname": "manuadfff",
+                "lastname": null,
+                "mobile_code": "+91",
+                "mobile": "9983950555",
+                "address": "sodala, metro station",
+                "latitude": "26.5465",
+                "longitude": "75.5545",
+                "profile_pic": ""
+            },
+            "delivery_man": null,
+            "tax": [
+                {
+                    "title": "GST",
+                    "tax": "18",
+                    "tax_amount": "90"
+                }
+            ],
+            "items": [
+                {
+                    "avg_rating": "5",
+                    "is_nonveg": null,
+                    "is_new": "Y",
+                    "is_featured": "Y",
+                    "item_name": "DELUXE VEGGIE",
+                    "thumb": "http://52.10.61.17/rest_el/uploaded/item_pic/thumb/pizza2.jpg",
+                    "price_name": "Medium",
+                    "unit_price": "249",
+                    "extra_price": "15",
+                    "attribute_price": "50",
+                    "quantity": "3",
+                    "total_price": "942",
+                    "data": "{\"attributes\":[{\"description\":\"Choose Your Crust Desc\",\"id\":1,\"name\":\"Choose Your Crust\",\"options\":[{\"currency\":\"$\",\"default_selected\":\"Y\",\"id\":2,\"name\":\"Fresh Pan Pizza\",\"price\":1}],\"type\":\"S\"},{\"description\":\"Ingredients desc\",\"id\":2,\"name\":\"Ingredients\",\"options\":[{\"currency\":\"$\",\"default_selected\":\"Y\",\"id\":7,\"name\":\"Black Olives\",\"price\":0}],\"type\":\"M\"}],\"extras\":[]}"
+                }
+            ]
+        }
+    ]
+}
+
+34. Cancel Order
+ * url - /ordercancel
+ * method - POST
+ * params - order_id(mandatory), device_id(mandatory), device_type(mandatory), ip_address(mandatory)
+ * device_type -> I / A / W
+ * header Params - username(mandatory), password(mandatory)
+
+35. Make Item Favourite
+ * url - /favourite
+ * method - POST
+ * params - item_id(mandatory)
+ * Header Params - username(mandatory), password(mandatory)
+{
+    "code": 0,
+    "error": false,
+    "message": "Successfully Added in Favourite list"
+}
+
+36. List of favourite items
+ * url - /favourite
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+http://52.10.61.17/rest_el/apis/customer/v1/favourite
+{
+    "code": 0,
+    "error": false,
+    "message": "Favourite drivers list",
+    "data": [
+        {
+            "id": "1",
+            "name": "DELUXE VEGGIE",
+            "avg_rating": "5",
+            "is_nonveg": "N",
+            "is_new": "Y",
+            "is_featured": "Y",
+            "images": [
+                {
+                    "thumb": "http://52.10.61.17/rest_el/uploaded/item_pic/thumb/pizza2.jpg",
+                    "large": "http://52.10.61.17/rest_el/uploaded/item_pic/large/pizza2.jpg"
+                }
+            ],
+            "prices": [
+                {
+                    "name": "Medium",
+                    "price": "249",
+                    "currency": "$"
+                }
+            ]
+        }
+    ]
+}
+
+37. Remove item from favourite items list
+* url - /favourite/:item_id
+* method - DELETE
+* Header params - username(mandatory), password(mandatory)
+http://52.10.61.17/rest_el/apis/customer/v1/favourite/1
+{
+    "code": 0,
+    "error": false,
+    "message": "Item Successsfully removed from your favourite list"
+}
+
+38. Check email -- when social media
+ * url - /sociallogin
+ * method - POST
+ * params - email (mandatory), firstname (mandatory), lastname (optional), device_id(mandatory), device_token(mandatory), device_type(A-> Android;I->Iphone mandatory), loginfrom(mandatory) -- (G, F), ipaddress(mandatory)
+
+39. Get menu item List -- II
+ * url - /menus/:customer_id/:catid/:textsearch/:is_new/:is_nonveg/:pageno
+ * method - GET
+ * DEFAULT VALUES => catid=0; textsearch=0; is_new=0; is_nonveg=0; pageno=0; customer_id=0 default
+ * is_new => Y / N
+ * is_nonveg => Y / N
+
+40. Favorite status of sent item ids 
+ * url - /favourite/:item_ids
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+
+41. Get menu item details -- II
+ * url - /menu/:menuid/:customerid
+ * method - GET
+ * customerid -> default : 0
+
+42. Get featured List -- II
+ * url - /featured/:branch_id/:customer_id
+ * method - GET
+ * customer_id -> default 0
+
+-- 19-09-2017
+/order/:order_id -- API MODIFIED
+http://52.10.248.52/rest_el/apis/customer/v1/order/1
+THREE FIELDS ADDED in response for comment and rating
+rating, comment, is_rated
+
+43. SAVE + UPDATE Rating AND Comment on ordered food item
+ * url - /rating
+ * method - POST
+ * params - item_id(mandatory), order_id(mandatory), rating(mandatory), comment(optional), row_id(mandatory)
+ * row_id deafult 0
+ * Header Params - username(mandatory), password(mandatory)
+
+44. Rating of item
+ * url - /rating/:item_id
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+
+45. Get item Comments List
+ * url - /comments/:item_id/:pageno
+ * method - GET
+ * pageno = 0 then all records
+ * Header Params - username(mandatory), password(mandatory)
+
+46. Get event list options
+ * url - /event_options
+ * method - GET
+http://52.10.248.52/rest_el/apis/customer/v1/event_options
+{
+    "code": 0,
+    "error": false,
+    "message": "Favourite Items list",
+    "data": [
+        {
+            "id": "1",
+            "name": "Cook and Serve on your event"
+        },
+        {
+            "id": "2",
+            "name": "Heat and Serve on you event"
+        },
+        {
+            "id": "3",
+            "name": "Just deliver to your event"
+        }
+    ]
+}
+
+47. Deactivate Own Account with Password
+ * url - /deactivate_account
+ * method - POST
+ * params - oldpassword (mandatory)
+ * header Params - username (mandatory), password (mandatory)
+ * username -> email / mobile
+
+-- ---- MANOJ 25-09-2017 ----
+API NO 12 UPDATED newuserstep2
+1 NEW PARAM ADDED -- referral_code(optional)
+
+-- 27-09-2017
+48. get loyalty points
+ * url - /loyalty_points
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+
+-- 02-10-2017
+
+49. url - /apply_promocode
+ * method - POST
+ * params - company_id(mandatory), branch_id(mandatory), category_ids(mandatory), item_ids(mandatory), amount(mandatory), type(mandatory), order_type(mandatory), promocode(mandatory)
+ * branch_id, category_ids, item_ids -> DEFAULT 0
+ * type -> P->PICK UP, D->DELIVERY, A->ALL
+ * order_type -> S->SCHEDULED, C->CURRENT, A->ALL
+ * Header Params - username(mandatory), password(mandatory)
+-- quantity needs to check at device end
+
+wallet_amount returned in login, social login and userstep2 API
+
+-- 29-10-2017
+50. List of Promotions
+ * url - /promotions/:branch_id
+ * method - GET
+
+51. Get Promotion details
+ * url - /promotion/:promotion_id
+ * method - GET
+
+52. Get FAQs
+ * url - /faqs
+ * method - GET
+
+-- 18-11-2017 ---------
+updated api no 27 -- added new field
+events add / edit
+branch_id (mandatory)
+
+-- 07-12-2017
+53. Get Notifications List
+ * url - /notifications
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)
+
+-- 10-12-2017
+54. Get My Rating + Reviews
+ * url - /myratings
+ * method - GET
+ * Header Params - username(mandatory), password(mandatory)

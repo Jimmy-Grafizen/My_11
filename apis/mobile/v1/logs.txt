@@ -1,0 +1,46 @@
+Array
+(
+    [entity] => event
+    [account_id] => acc_DwNRHSt0mRuDRh
+    [event] => payout.processed
+    [contains] => Array
+        (
+            [0] => payout
+        )
+
+    [payload] => Array
+        (
+            [payout] => Array
+                (
+                    [entity] => Array
+                        (
+                            [id] => pout_F4nUVYK1EPGsa3
+                            [entity] => payout
+                            [fund_account_id] => fa_F4nUVN9jxq26Um
+                            [amount] => 100
+                            [currency] => INR
+                            [notes] => Array
+                                (
+                                    [entry_id] => 3
+                                    [customer_id] => 1
+                                )
+
+                            [fees] => 472
+                            [tax] => 72
+                            [status] => processed
+                            [purpose] => payout
+                            [utr] => 017213827013
+                            [mode] => IMPS
+                            [reference_id] => 1_001201616764
+                            [narration] => req from manish kumar
+                            [batch_id] => 
+                            [failure_reason] => 
+                            [created_at] => 1592638350
+                        )
+
+                )
+
+        )
+
+    [created_at] => 1592638360
+)

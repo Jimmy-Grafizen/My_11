@@ -1,0 +1,130 @@
+/*max-width:1179px*/
+@media screen and (max-width:1179px){
+.wsmenu-list > li > a{font-size: 13px;}
+.wsmenu-list > li:last-child a{padding: 11px 17px;font-size: 13px;}
+a.logo_hed {position: relative;z-index: 9999999;}
+.banner_section .overlay1{padding: 210px 0 70px;}
+.about_right{margin-top:-258px;}
+.about_right img {max-width: 82%;}
+.about_text .about_subtitle{font-size: 41px;}
+.about_text .about_description{line-height: 30px;font-size: 16px;margin-bottom: 10px;}
+.about_section {margin-top: 37px;margin-bottom: 20px;}
+.container{width: 100%;}
+.left_column h3 span {font-size: 14px;}
+.left_column h3 {font-size: 20px;line-height: 16px;	}
+.right_btn{padding: 32px 15px;width: 25%;}
+.left_column{width: 75%;padding: 9px 11px;}
+.how_to_play h2{font-size: 32px;}
+.one_step h4 {font-size: 18px;padding-bottom: 5px;}
+.one_step p {font-size: 16px;}
+.step_by_step {padding-bottom: 25px;}
+.testimonial_hed h2{font-size: 32px;}
+.choose_section{padding: 40px 0px 10px;}
+.testimonial_hed p{font-size: 15px;}
+.copyright_bar{padding: 19px 0 17px;}
+.cricket_one_tab .left_column h3{float: left;width: 70%;padding-top: 10px;}
+.scror_tab .fancyTab {padding: 0px;line-height: 0px;height: 55px;}
+.matck_counter{padding: 10px 23px 20px 10px;}
+.scror_tab .nav-tabs > li.fancyTab > a {margin-bottom: 0px;padding-bottom: 20px;padding-top: 20px;width: 100%;display: block;}
+.latest_heading.heading_2 h2 {font-size: 25px;}
+.matches_box{height: 174px;}
+.footer_menu li a{font-size: 12px;}
+.footer_sec h4{font-size: 19px;}
+.footer_sec{padding: 30px 0 0;}
+.fix_top_header.sticky .container {max-width: 960px;padding-left: 0px;margin-left: 31px;}
+a.logo_hed img {width: 141px;}
+.wsmenu-list{padding-top: 0;}
+
+}
+
+
+/*max-width:1023px*/
+ @media screen and (max-width:1023px){
+.banner_section .overlay1 .total-slide .banner-text h1{font-size: 27px;    margin-bottom: 2px;}
+.banner_section .overlay1 .total-slide .banner-bottom-text{font-size: 21px;}
+.banner_section .overlay1 .total-slide .get-start a{padding: 11px 17px;font-size: 15px;}
+.about_right{margin-top: 0px;}
+.banner_section .overlay1 {padding: 130px 0 70px;}
+.about_right img {max-width: 100%;}
+.about_text .about_subtitle {font-size: 36px;}
+.icon_img {max-width: 22%;padding-right: 10px;}
+.scror_tab .fancyTab{height: 47px;}
+.clock_time li{font-size: 9px;}
+.scror_tab .nav-tabs > li.fancyTab > a{padding-bottom: 12px;    padding-top: 12px;}
+.right_btn{padding: 32px 15px;}
+.right_btn a {font-size: 13px;}
+.left_column h3 {font-size: 17px;line-height: 11px;}
+.matches_box {height: 92px;}
+.one_step h4 {font-size: 16px;}
+.one_step p {font-size: 15px;}
+.play_now_cover {padding-top: 0px;}
+.play_now{    width: 100%;}
+.snozer_app {display: block;}
+.app_info {padding-top: 0px;padding-bottom: 31px;}
+.footer_menu li a {font-size: 14px;line-height: 22px;}
+a.logo_hed{display: none;}
+.matck_counter:after{transform: skew(-0deg);top: 0px;right: 0px;}
+.smallogo{top: 0px; left: 0px; right: 0px; height: auto;text-align: left;padding: 14px;background: #b70606;-webkit-box-shadow: 0 0px 1px rgba(0, 0, 0, 0.13);}
+.smallogo img {width: 160px;}
+.animated-arrow{margin: 27px 10px 0 0;}
+.animated-arrow span{background: #ffffff;}
+.wsmenu .wsmenu-list{width: 100%;}
+.wsmenu > .wsmenu-list > li > a{background: #b70606; color: #fff;border-radius:0px;}
+.wsmenu-list > li:last-child a{width: 100%;margin: 0px;border:0px;}
+.wsmenu-list > li:last-child a:hover, .wsmenu-list > li a:hover{background: #a90000 !important;}
+ }
+
+
+ 	/*max-width:767px*/
+ @media screen and (max-width:767px){
+.banner_section .overlay1 {padding: 113px 0 40px;}
+.container {max-width: 650px;}
+.footer_menu{    margin-bottom: 0px;}
+.snozer_app{padding-top: 35px;}
+.match_fig {float: none;width: 100%;position: relative;}
+.matck_counter{width: 100%;}
+.match_fig figure {display: initial;float: none;width: 100%;}
+.one_step h4 {font-size: 20px;}
+.one_step {margin-bottom: 20px;}
+.next_match{padding-top:30px;}
+.about_right img {box-shadow: 0 0 6px #0000003d;border-radius: 58px;}
+.latest_heading.heading_2{text-align: center;}
+.latest_heading.heading_2 strong{left: 0px;}
+.match_fig figure img{width: 100%;}
+.matches_box {height: 239px;}
+.matck_counter {padding: 10px;}
+.smallogo img {width: 110px;}
+.animated-arrow {margin: 22px 3px 0 0;}
+.matck_counter:after {position: absolute;content: "";top: 0px;left: 0px;right: 0px;transform: skew(-0deg);bottom: 0px;}
+}
+
+
+ 	 /*max-width:479px*/
+ @media screen and (max-width:479px){
+.banner_section .overlay1 .total-slide .banner-text h1 {font-size: 22px;}
+.banner_section .overlay1{text-align: center;}
+.banner_section .overlay1 .total-slide .get-start{margin-top: 1.938rem;}
+.about_text .about_description{font-size: 15px;margin-bottom: 13px;}
+.cricket_one_tab .left_column h3{padding-bottom: 9px;}
+.clock_time{line-height: 27px;}
+.banner_section .overlay1 {padding: 73px 0 35px;}
+.video_box iframe{height: 190px;}
+.how_to_play{padding-top: 0px;}
+.matches_box {height: 369px;}
+.how_to_play h2 {padding-bottom: 27px;font-size: 24px;}
+.about_text .about_subtitle {font-size: 27px;margin-bottom: 5px;}
+.cricket_one_tab .left_column h3 {float: none;width: 100%;}
+.time_left {float: none;width: 100%;}
+.about_section {margin-top: 19px;margin-bottom: 10px;}
+.about_text{padding-bottom: 17px;}
+.left_column {width: 100%;}
+.right_btn{width: 100%;}
+.right_btn {padding: 15px 15px;}
+.desktop_download ul li{    width: 47%;}
+.desktop_download ul li:last-child img{width: 132px;}
+.testimonial_hed h2 {font-size: 22px;}
+.testimonial_hed p {color: #3f3c57;font-size: 15px;margin-bottom: 0px;padding: 0px;}
+.smallogo img {width: 75px;}
+.animated-arrow {margin: 13px 3px 0 0;}
+.icon_img {max-width: 25%;}
+}

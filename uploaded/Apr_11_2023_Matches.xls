@@ -1,0 +1,160 @@
+<form action="https://my11option.com/admin/customers/action" method="post" accept-charset="utf-8" id="table_form" class="form-inline form">    <div class="row">
+        <div class="col-lg-12">
+            
+            <section class="panel">
+                <header class="panel-heading">
+                                    </header>
+                <div class="panel-body">
+                <!-- <a href="https://my11option.com/admin/admins/export"  ><button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Export Admins</button></a> -->
+                </div>
+                <div class="panel-body">
+                    <section id="no-more-tables"  class="table responsive">
+                        <table class="table table-bordered table-striped table-condensed cf">
+                            <thead class="cf">
+                                <tr>
+                                    <th>Transactions Id</th>
+                                    <th class="sorting enable-sort" sort_type="" field="customers.firstname">First Name</th>
+									<th class="sorting enable-sort" sort_type="" field="customers.lastname">Last Name</th>
+                                    <th class="sorting  enable-sort" sort_type=""  field="customers.email">Email Address</th>
+                                    <th class="sorting  enable-sort" sort_type=""  field="customers.phone">Phone</th>
+									<th class="sorting  enable-sort" sort_type=""  field="amount">Amount</th>
+									<th class="sorting  enable-sort" sort_type=""  field="status">Status</th>
+                                    <th class="sorting  enable-sort" sort_type=""  field="created_at">Created At</th>
+                                    <th class="sorting  enable-sort" sort_type=""  field="updated_at">Updateed At</th>
+                                                                    </tr>
+                            </thead>
+                            <tbody>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-1681198124405                                        </td>
+                                        <td data-title="First Name">
+                                            Pawan Kumar                                         </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                            pawansharmapk719@gmail.com                                        </td>
+                                        <td data-title="Phone">
+                                            +91-6206983152                                        </td>
+										<td data-title="Amount">
+                                         100.00                                        </td>
+										<td data-title="Status">
+                                         Confirm                                        </td>
+                                        <td data-title="Created">
+                                            11/04/2023 12:58 PM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-1681191543266                                        </td>
+                                        <td data-title="First Name">
+                                            Dheerendra Sonkar                                         </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                            tech508guru@gmail.com                                        </td>
+                                        <td data-title="Phone">
+                                            +91-8881015003                                        </td>
+										<td data-title="Amount">
+                                         550.00                                        </td>
+										<td data-title="Status">
+                                         Confirm                                        </td>
+                                        <td data-title="Created">
+                                            11/04/2023 11:09 AM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-1681190384317                                        </td>
+                                        <td data-title="First Name">
+                                            Bapan Das                                         </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                            imabhijitdas105@gmail.com                                        </td>
+                                        <td data-title="Phone">
+                                            +91-6294776959                                        </td>
+										<td data-title="Amount">
+                                         555.00                                        </td>
+										<td data-title="Status">
+                                         Confirm                                        </td>
+                                        <td data-title="Created">
+                                            11/04/2023 10:49 AM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-16807568652                                        </td>
+                                        <td data-title="First Name">
+                                            Divyesh                                        </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                            khuntdivyesh15@gmail.com                                        </td>
+                                        <td data-title="Phone">
+                                            +91-7283838376                                        </td>
+										<td data-title="Amount">
+                                         11.00                                        </td>
+										<td data-title="Status">
+                                         Confirm                                        </td>
+                                        <td data-title="Created">
+                                            06/04/2023 10:24 AM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-168024921613                                        </td>
+                                        <td data-title="First Name">
+                                            Alpesh Rameshchandra Daiya                                        </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                            alpeshdaiyaad@gmail.com                                        </td>
+                                        <td data-title="Phone">
+                                            +91-9898862736                                        </td>
+										<td data-title="Amount">
+                                         50.00                                        </td>
+										<td data-title="Status">
+                                         Confirm                                        </td>
+                                        <td data-title="Created">
+                                            31/03/2023 01:23 PM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-168007064413                                        </td>
+                                        <td data-title="First Name">
+                                            Alpesh Rameshchandra Daiya                                        </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                            alpeshdaiyaad@gmail.com                                        </td>
+                                        <td data-title="Phone">
+                                            +91-9898862736                                        </td>
+										<td data-title="Amount">
+                                         100.00                                        </td>
+										<td data-title="Status">
+                                         Confirm                                        </td>
+                                        <td data-title="Created">
+                                            29/03/2023 11:47 AM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+    </form>

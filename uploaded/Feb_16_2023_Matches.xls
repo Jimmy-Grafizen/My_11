@@ -1,0 +1,223 @@
+<form action="https://my11option.com/admin/customers/action" method="post" accept-charset="utf-8" id="table_form" class="form-inline form">    <div class="row">
+        <div class="col-lg-12">
+            
+            <section class="panel">
+                <header class="panel-heading">
+                                    </header>
+                <div class="panel-body">
+                <!-- <a href="https://my11option.com/admin/admins/export"  ><button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Export Admins</button></a> -->
+                </div>
+                <div class="panel-body">
+                    <section id="no-more-tables"  class="table responsive">
+                        <table class="table table-bordered table-striped table-condensed cf">
+                            <thead class="cf">
+                                <tr>
+                                    <th>Transactions Id</th>
+                                    <th class="sorting enable-sort" sort_type="" field="customers.firstname">First Name</th>
+									<th class="sorting enable-sort" sort_type="" field="customers.lastname">Last Name</th>
+                                    <th class="sorting  enable-sort" sort_type=""  field="customers.email">Email Address</th>
+                                    <th class="sorting  enable-sort" sort_type=""  field="customers.phone">Phone</th>
+									<th class="sorting  enable-sort" sort_type=""  field="amount">Amount</th>
+									<th class="sorting  enable-sort" sort_type=""  field="status">Status</th>
+                                    <th class="sorting  enable-sort" sort_type=""  field="created_at">Created At</th>
+                                    <th class="sorting  enable-sort" sort_type=""  field="updated_at">Updateed At</th>
+                                                                    </tr>
+                            </thead>
+                            <tbody>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-16751941072                                        </td>
+                                        <td data-title="First Name">
+                                            Divyesh                                        </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                            khuntdivyesh15@gmail.com                                        </td>
+                                        <td data-title="Phone">
+                                            +91-7283838376                                        </td>
+										<td data-title="Amount">
+                                         9.00                                        </td>
+										<td data-title="Status">
+                                         Processing                                        </td>
+                                        <td data-title="Created">
+                                            01/02/2023 01:11 AM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-16613757668                                        </td>
+                                        <td data-title="First Name">
+                                            Laltuali shaikh                                        </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                                                                    </td>
+                                        <td data-title="Phone">
+                                            +91-7567675519                                        </td>
+										<td data-title="Amount">
+                                         10.00                                        </td>
+										<td data-title="Status">
+                                         Processing                                        </td>
+                                        <td data-title="Created">
+                                            25/08/2022 02:46 AM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-16605559308                                        </td>
+                                        <td data-title="First Name">
+                                            Laltuali shaikh                                        </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                                                                    </td>
+                                        <td data-title="Phone">
+                                            +91-7567675519                                        </td>
+										<td data-title="Amount">
+                                         500.00                                        </td>
+										<td data-title="Status">
+                                         Rejected                                        </td>
+                                        <td data-title="Created">
+                                            15/08/2022 03:02 PM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-16605559228                                        </td>
+                                        <td data-title="First Name">
+                                            Laltuali shaikh                                        </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                                                                    </td>
+                                        <td data-title="Phone">
+                                            +91-7567675519                                        </td>
+										<td data-title="Amount">
+                                         500.00                                        </td>
+										<td data-title="Status">
+                                         Rejected                                        </td>
+                                        <td data-title="Created">
+                                            15/08/2022 03:02 PM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-16605559158                                        </td>
+                                        <td data-title="First Name">
+                                            Laltuali shaikh                                        </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                                                                    </td>
+                                        <td data-title="Phone">
+                                            +91-7567675519                                        </td>
+										<td data-title="Amount">
+                                         500.00                                        </td>
+										<td data-title="Status">
+                                         Rejected                                        </td>
+                                        <td data-title="Created">
+                                            15/08/2022 03:01 PM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-16605559068                                        </td>
+                                        <td data-title="First Name">
+                                            Laltuali shaikh                                        </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                                                                    </td>
+                                        <td data-title="Phone">
+                                            +91-7567675519                                        </td>
+										<td data-title="Amount">
+                                         500.00                                        </td>
+										<td data-title="Status">
+                                         Rejected                                        </td>
+                                        <td data-title="Created">
+                                            15/08/2022 03:01 PM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-16604671308                                        </td>
+                                        <td data-title="First Name">
+                                            Laltuali shaikh                                        </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                                                                    </td>
+                                        <td data-title="Phone">
+                                            +91-7567675519                                        </td>
+										<td data-title="Amount">
+                                         5000.00                                        </td>
+										<td data-title="Status">
+                                         Rejected                                        </td>
+                                        <td data-title="Created">
+                                            14/08/2022 02:22 PM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-16603336978                                        </td>
+                                        <td data-title="First Name">
+                                            Laltuali shaikh                                        </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                                                                    </td>
+                                        <td data-title="Phone">
+                                            +91-7567675519                                        </td>
+										<td data-title="Amount">
+                                         1000.00                                        </td>
+										<td data-title="Status">
+                                         Rejected                                        </td>
+                                        <td data-title="Created">
+                                            13/08/2022 01:18 AM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                 
+                                    <tr>
+                                        <td data-title="Select">
+                                            WIDWWALL-16599854978                                        </td>
+                                        <td data-title="First Name">
+                                            Laltuali shaikh                                        </td>
+										<td data-title="Last Name">
+                                                                                    </td>
+                                        <td data-title="Email Address"> 
+                                                                                    </td>
+                                        <td data-title="Phone">
+                                            +91-7567675519                                        </td>
+										<td data-title="Amount">
+                                         1000.00                                        </td>
+										<td data-title="Status">
+                                         Processing                                        </td>
+                                        <td data-title="Created">
+                                            09/08/2022 12:34 AM										</td>
+                                        <td data-title="Updateed">
+                                            N/A										</td>
+                                                                            </tr>
+                                                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+    </form>

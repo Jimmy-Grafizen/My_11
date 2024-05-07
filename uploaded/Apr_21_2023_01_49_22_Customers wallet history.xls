@@ -1,0 +1,427 @@
+
+    <form action="https://my11option.com/admin/customers_wallet_history//action" method="post" accept-charset="utf-8" id="table_form" class="form-inline form">    <div class="row">
+        <div class="col-lg-12">
+            
+            <section class="panel">
+                <header class="panel-heading">
+                                    </header>
+                <div class="panel-body">
+                <!-- <a href="https://my11option.com/admin/groups/export"  ><button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Export Customers wallet history </button></a> -->
+                </div>
+                <div class="panel-body">
+                    <section id="no-more-tables">
+                        <table class="table table-bordered table-striped table-condensed cf">
+                            <thead class="cf">
+                                <tr>
+                                    <th class="sorting enable-sort" sort_type="" field="tbl_customer_wallet_histories.transaction_id">Transaction ID</th>
+                                    <th class="sorting enable-sort" sort_type="" field="tbl_customer_wallet_histories.transaction_type">Transaction Type</th>
+                                    <th class="sorting enable-sort" sort_type="" field="tbl_customer_wallet_histories.wallet_type">Wallet Type</th>
+                                    <th class="sorting enable-sort" sort_type="" field="tbl_customer_wallet_histories.type">Type</th>
+                                    <th class="sorting enable-sort" sort_type="" field="tbl_customer_wallet_histories.description">Description</th>
+                                    <th class="sorting enable-sort" sort_type="" field="tbl_customer_wallet_histories.previous_amount">Previous Amount</th>
+                                    <th class="sorting enable-sort" sort_type="" field="tbl_customer_wallet_histories.amount">Amount</th>
+                                    <th class="sorting enable-sort" sort_type="" field="tbl_customer_wallet_histories.current_amount">Current Amount</th>
+                                    <th class="sorting enable-sort" sort_type="" field="tbl_customer_wallet_histories.status">Status</th>
+                                    <th class="sorting  enable-sort" sort_type=""  field="tbl_customer_wallet_histories.created">Created</th>
+                                                                    </tr>
+                            </thead>
+                            <tbody>
+                                 
+                                    <tr>                                        
+                                        <td data-title="Transaction ID">
+                                            JCWALL1682002591232_80_12701                                        </td>
+                                        
+                                    
+                                        <td data-title="Transaction Type">
+                                            DEBIT                                        </td>
+
+                                        <td data-title="Wallet Type">
+                                            Deposit Wallet                                        </td>
+                                        
+                                    
+                                        <td data-title="Type">
+                                            CUSTOMER_JOIN_CONTEST                                        </td>
+                                        
+                                    
+                                        <td data-title="Description">
+                                            232 Join contest match_contest_id 80 with customer_team_id 12701.                                        </td>
+
+                                        <td data-title="Previous Amount">
+                                            181.15                                        </td>
+                                        
+                                    
+                                        <td data-title="Amount">
+                                            97.02                                        </td>
+                                        
+                                    
+                                        <td data-title="Current Amount">
+                                            84.13                                        </td>
+                                        
+                                    
+                                        <td data-title="Status">
+											
+                                            <span style="color: green">Success</span>                                        </td>
+                                        
+                                        <td data-title="Created">
+                                            20/04/2023 08:26 PM</td>
+                                                                            </tr>
+                                 
+                                    <tr>                                        
+                                        <td data-title="Transaction ID">
+                                            JCWALL1682002553232_82_12701                                        </td>
+                                        
+                                    
+                                        <td data-title="Transaction Type">
+                                            DEBIT                                        </td>
+
+                                        <td data-title="Wallet Type">
+                                            Deposit Wallet                                        </td>
+                                        
+                                    
+                                        <td data-title="Type">
+                                            CUSTOMER_JOIN_CONTEST                                        </td>
+                                        
+                                    
+                                        <td data-title="Description">
+                                            232 Join contest match_contest_id 82 with customer_team_id 12701.                                        </td>
+
+                                        <td data-title="Previous Amount">
+                                            630.25                                        </td>
+                                        
+                                    
+                                        <td data-title="Amount">
+                                            449.10                                        </td>
+                                        
+                                    
+                                        <td data-title="Current Amount">
+                                            181.15                                        </td>
+                                        
+                                    
+                                        <td data-title="Status">
+											
+                                            <span style="color: green">Success</span>                                        </td>
+                                        
+                                        <td data-title="Created">
+                                            20/04/2023 08:25 PM</td>
+                                                                            </tr>
+                                 
+                                    <tr>                                        
+                                        <td data-title="Transaction ID">
+                                            JCWALL1682002539232_81_12701                                        </td>
+                                        
+                                    
+                                        <td data-title="Transaction Type">
+                                            DEBIT                                        </td>
+
+                                        <td data-title="Wallet Type">
+                                            Deposit Wallet                                        </td>
+                                        
+                                    
+                                        <td data-title="Type">
+                                            CUSTOMER_JOIN_CONTEST                                        </td>
+                                        
+                                    
+                                        <td data-title="Description">
+                                            232 Join contest match_contest_id 81 with customer_team_id 12701.                                        </td>
+
+                                        <td data-title="Previous Amount">
+                                            809.35                                        </td>
+                                        
+                                    
+                                        <td data-title="Amount">
+                                            179.10                                        </td>
+                                        
+                                    
+                                        <td data-title="Current Amount">
+                                            630.25                                        </td>
+                                        
+                                    
+                                        <td data-title="Status">
+											
+                                            <span style="color: green">Success</span>                                        </td>
+                                        
+                                        <td data-title="Created">
+                                            20/04/2023 08:25 PM</td>
+                                                                            </tr>
+                                 
+                                    <tr>                                        
+                                        <td data-title="Transaction ID">
+                                            RCWALL1682002031232_68_12324                                        </td>
+                                        
+                                    
+                                        <td data-title="Transaction Type">
+                                            CREDIT                                        </td>
+
+                                        <td data-title="Wallet Type">
+                                            Deposit Wallet                                        </td>
+                                        
+                                    
+                                        <td data-title="Type">
+                                            CUSTOMER_REFUND_CONTEST                                        </td>
+                                        
+                                    
+                                        <td data-title="Description">
+                                            232 Abodent match refund 41.65 on match_contest_id 68                                        </td>
+
+                                        <td data-title="Previous Amount">
+                                            767.70                                        </td>
+                                        
+                                    
+                                        <td data-title="Amount">
+                                            41.65                                        </td>
+                                        
+                                    
+                                        <td data-title="Current Amount">
+                                            809.35                                        </td>
+                                        
+                                    
+                                        <td data-title="Status">
+											
+                                            <span style="color: green">Success</span>                                        </td>
+                                        
+                                        <td data-title="Created">
+                                            20/04/2023 08:17 PM</td>
+                                                                            </tr>
+                                 
+                                    <tr>                                        
+                                        <td data-title="Transaction ID">
+                                            RCWALL1682002031232_68_12324                                        </td>
+                                        
+                                    
+                                        <td data-title="Transaction Type">
+                                            CREDIT                                        </td>
+
+                                        <td data-title="Wallet Type">
+                                            Bonus Wallet                                        </td>
+                                        
+                                    
+                                        <td data-title="Type">
+                                            CUSTOMER_REFUND_CONTEST                                        </td>
+                                        
+                                    
+                                        <td data-title="Description">
+                                            232 Abodent match refund 7.35 on match_contest_id 68                                        </td>
+
+                                        <td data-title="Previous Amount">
+                                            485.30                                        </td>
+                                        
+                                    
+                                        <td data-title="Amount">
+                                            7.35                                        </td>
+                                        
+                                    
+                                        <td data-title="Current Amount">
+                                            492.65                                        </td>
+                                        
+                                    
+                                        <td data-title="Status">
+											
+                                            <span style="color: green">Success</span>                                        </td>
+                                        
+                                        <td data-title="Created">
+                                            20/04/2023 08:17 PM</td>
+                                                                            </tr>
+                                 
+                                    <tr>                                        
+                                        <td data-title="Transaction ID">
+                                            RCWALL1682002031232_70_12324                                        </td>
+                                        
+                                    
+                                        <td data-title="Transaction Type">
+                                            CREDIT                                        </td>
+
+                                        <td data-title="Wallet Type">
+                                            Deposit Wallet                                        </td>
+                                        
+                                    
+                                        <td data-title="Type">
+                                            CUSTOMER_REFUND_CONTEST                                        </td>
+                                        
+                                    
+                                        <td data-title="Description">
+                                            232 Abodent match refund 50.00 on match_contest_id 70                                        </td>
+
+                                        <td data-title="Previous Amount">
+                                            717.70                                        </td>
+                                        
+                                    
+                                        <td data-title="Amount">
+                                            50.00                                        </td>
+                                        
+                                    
+                                        <td data-title="Current Amount">
+                                            767.70                                        </td>
+                                        
+                                    
+                                        <td data-title="Status">
+											
+                                            <span style="color: green">Success</span>                                        </td>
+                                        
+                                        <td data-title="Created">
+                                            20/04/2023 08:17 PM</td>
+                                                                            </tr>
+                                 
+                                    <tr>                                        
+                                        <td data-title="Transaction ID">
+                                            JCWALL1681985140232_68_12324                                        </td>
+                                        
+                                    
+                                        <td data-title="Transaction Type">
+                                            DEBIT                                        </td>
+
+                                        <td data-title="Wallet Type">
+                                            Deposit Wallet                                        </td>
+                                        
+                                    
+                                        <td data-title="Type">
+                                            CUSTOMER_JOIN_CONTEST                                        </td>
+                                        
+                                    
+                                        <td data-title="Description">
+                                            232 Join contest match_contest_id 68 with customer_team_id 12324.                                        </td>
+
+                                        <td data-title="Previous Amount">
+                                            759.35                                        </td>
+                                        
+                                    
+                                        <td data-title="Amount">
+                                            41.65                                        </td>
+                                        
+                                    
+                                        <td data-title="Current Amount">
+                                            717.70                                        </td>
+                                        
+                                    
+                                        <td data-title="Status">
+											
+                                            <span style="color: green">Success</span>                                        </td>
+                                        
+                                        <td data-title="Created">
+                                            20/04/2023 03:35 PM</td>
+                                                                            </tr>
+                                 
+                                    <tr>                                        
+                                        <td data-title="Transaction ID">
+                                            JCWALL1681985140232_68_12324                                        </td>
+                                        
+                                    
+                                        <td data-title="Transaction Type">
+                                            DEBIT                                        </td>
+
+                                        <td data-title="Wallet Type">
+                                            Bonus Wallet                                        </td>
+                                        
+                                    
+                                        <td data-title="Type">
+                                            CUSTOMER_JOIN_CONTEST                                        </td>
+                                        
+                                    
+                                        <td data-title="Description">
+                                            232 Join contest match_contest_id 68 with customer_team_id 12324.                                        </td>
+
+                                        <td data-title="Previous Amount">
+                                            492.65                                        </td>
+                                        
+                                    
+                                        <td data-title="Amount">
+                                            7.35                                        </td>
+                                        
+                                    
+                                        <td data-title="Current Amount">
+                                            485.30                                        </td>
+                                        
+                                    
+                                        <td data-title="Status">
+											
+                                            <span style="color: green">Success</span>                                        </td>
+                                        
+                                        <td data-title="Created">
+                                            20/04/2023 03:35 PM</td>
+                                                                            </tr>
+                                 
+                                    <tr>                                        
+                                        <td data-title="Transaction ID">
+                                            JCWALL1681985106232_70_12324                                        </td>
+                                        
+                                    
+                                        <td data-title="Transaction Type">
+                                            DEBIT                                        </td>
+
+                                        <td data-title="Wallet Type">
+                                            Deposit Wallet                                        </td>
+                                        
+                                    
+                                        <td data-title="Type">
+                                            CUSTOMER_JOIN_CONTEST                                        </td>
+                                        
+                                    
+                                        <td data-title="Description">
+                                            232 Join contest match_contest_id 70 with customer_team_id 12324.                                        </td>
+
+                                        <td data-title="Previous Amount">
+                                            809.35                                        </td>
+                                        
+                                    
+                                        <td data-title="Amount">
+                                            50.00                                        </td>
+                                        
+                                    
+                                        <td data-title="Current Amount">
+                                            759.35                                        </td>
+                                        
+                                    
+                                        <td data-title="Status">
+											
+                                            <span style="color: green">Success</span>                                        </td>
+                                        
+                                        <td data-title="Created">
+                                            20/04/2023 03:35 PM</td>
+                                                                            </tr>
+                                 
+                                    <tr>                                        
+                                        <td data-title="Transaction ID">
+                                            WINWALL1681927080232                                        </td>
+                                        
+                                    
+                                        <td data-title="Transaction Type">
+                                            CREDIT                                        </td>
+
+                                        <td data-title="Wallet Type">
+                                            Winning Wallet                                        </td>
+                                        
+                                    
+                                        <td data-title="Type">
+                                            CUSTOMER_WIN_CONTEST                                        </td>
+                                        
+                                    
+                                        <td data-title="Description">
+                                            232 Win amount 6 on match_contest_id 61 With Rank 27                                        </td>
+
+                                        <td data-title="Previous Amount">
+                                            0.00                                        </td>
+                                        
+                                    
+                                        <td data-title="Amount">
+                                            6.00                                        </td>
+                                        
+                                    
+                                        <td data-title="Current Amount">
+                                            6.00                                        </td>
+                                        
+                                    
+                                        <td data-title="Status">
+											
+                                            <span style="color: green">Success</span>                                        </td>
+                                        
+                                        <td data-title="Created">
+                                            19/04/2023 11:28 PM</td>
+                                                                            </tr>
+                                                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+         </form>
+

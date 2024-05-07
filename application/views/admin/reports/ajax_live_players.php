@@ -1,0 +1,1 @@
+<?php $this->load->view('admin/matches/ajax_live_players'); ?>

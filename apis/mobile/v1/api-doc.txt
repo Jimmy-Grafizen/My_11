@@ -1,0 +1,942 @@
+#API Description
+BASE URL => http://139.162.28.58/snozer/admin/apis/mobile/v1/
+
+1  Name : Get App Version Name from playstore
+   Url : get_playstore_app_version/:app_id
+   Method : map
+   Params : -
+   Headers Params : -
+
+--------------------------------------
+
+
+
+2  Name : Check App Version
+   Url : check_app_version
+   Method : post
+   Params : version_code(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+3  Name : Get State List
+   Url : states/:country_id
+   Method : map
+   Params : country_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+4  Name : Social login
+   Url : social_login
+   Method : post
+   Params : email(mandatory), firstname(mandatory), lastname(optional), social_type(mandatory)(F=>Facebook,G=>Gplus), social_id(optional)
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+5  Name : Check user
+   Url : check_user
+   Method : post
+   Params : username(mandatory), type(mandatory)(E=>Email,M=>Mobile)
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+6  Name : New user
+   Url : newuser
+   Method : post
+   Params : firstname(mandatory), country_mobile_code(mandatory), phone(mandatory), email(mandatory), password(mandatory), referral_code(optional)
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+7  Name : Verify OTP
+   Url : verifyotp
+   Method : post
+   Params : otp(mandatory), type(mandatory)(V=verification, F=Forgot password, FE=Forgot password email, L=login), (If type=F then country_mobile_code(mandatory), phone(mandatory), password(mandatory)), (If type=FE then email(mandatory), password(mandatory)),  else(country_mobile_code(mandatory), phone(mandatory))
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+8  Name : Forgot Password
+   Url : forgotpassword
+   Method : post
+   Params : country_mobile_code(mandatory), phone(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+9  Name : Forgot Password Email
+   Url : forgotpassword_email
+   Method : post
+   Params : email(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+10  Name : User Login
+   Url : login
+   Method : post
+   Params : email (mandatory), password (mandatory) 
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+11  Name : Logout
+   Url : logout
+   Method : post
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+12  Name : Update Notification Token
+   Url : update_token
+   Method : post
+   Params : device_token(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+13  Name : Get profile
+   Url : get_profile
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+14  Name : Update Profile
+   Url : update_profile
+   Method : post
+   Params : firstname(mandatory), phone(mandatory), country_mobile_code(mandatory), email(mandatory), lastname(optional), dob(optional), addressline1(optional), addressline2(optional), country(optional), state(optional), city(optional), pincode(optional)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+15  Name : Update And Verify Email
+   Url : update_verify_email
+   Method : post
+   Params : email(mandatory), is_social(mandatory)(Y=>YES, N=>NO), social_type(optional)(F=>Facebook, G=>Gplus)(If is_social=Y then social_type mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+16  Name : Send otp mobile
+   Url : send_otp_mobile
+   Method : post
+   Params : country_mobile_code(mandatory), phone (mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+17  Name : Update verify mobile
+   Url : update_verify_mobile
+   Method : post
+   Params : otp(mandatory), type(mandatory)(SP), country_mobile_code(mandatory), phone(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+18  Name : Get Profile Pictures
+   Url : get_profile_pictures
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+19  Name : Change profile picture
+   Url : change_profile_picture
+   Method : post
+   Params : image(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+20  Name : Change Password
+   Url : change_password
+   Method : post
+   Params : old_password (mandatory), password (mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+21  Name : Get refer earn
+   Url : get_refer_earn
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+22  Name : Get refer earn detail
+   Url : get_refer_earn_detail
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+23  Name : Customer Deposit amount
+   Url : customer_deposit_amount
+   Method : post
+   Params : amount(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+24  Name : Customer wallet recharge
+   Url : wallet_recharge
+   Method : post
+   Params : amount(mandatory),paymentmethod(optional)(PAYTM,RAZORPAY)(default is PAYTM), promocode(optional)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+25  Name : Customer wallet recharge web
+   Url : wallet_recharge_web
+   Method : map
+   Params : amount(mandatory),user_id(mandatory),paymentmethod(mandatory)(PAYTM,RAZORPAY),promocode(optional)
+   Headers Params : 
+
+--------------------------------------
+
+
+
+26  Name : Get Customer wallet detail
+   Url : get_customer_wallet_detail
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+27  Name : Get Customer wallet history
+   Url : get_customer_wallet_history
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+28  Name : Get Customer wallet history Pages
+   Url : get_customer_wallet_history/:page_no
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+29  Name : Get Customer wallet history filter
+   Url : get_customer_wallet_history_filter/:page_no/:type
+   Method : map
+   Params : :type(All, Join, Win, Refund, Deposit, Bonus, Withdraw)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+30  Name : Customer Withdraw amount
+   Url : customer_withdraw_amount
+   Method : post
+   Params : amount(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+31  Name : Get Customer withdraw history
+   Url : get_customer_withdraw_history
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+32  Name : Get Customer withdraw history pages
+   Url : get_customer_withdraw_history/:page_no
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+33  Name : Customer Team Name Update
+   Url : customer_team_name_update
+   Method : post
+   Params : team_name(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+34  Name : Add PanCard
+   Url : add_pancard
+   Method : post
+   Params : image(mandatory), number(mandatory), name(mandatory), dob(mandatory)(Y-m-d), state(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+35  Name : Add Bank Detail
+   Url : add_bankdetail
+   Method : post
+   Params : account_number(mandatory), name(mandatory), ifsc(mandatory), image(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+36  Name : Get notifications
+   Url : get_notifications
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+37  Name : Get notifications pages
+   Url : get_notifications/:page_no
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+38  Name : Get playing history
+   Url : get_playing_history
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+39  Name : Get Customer recent series leaderboard
+   Url : get_customer_recent_series_leaderboard
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+40  Name : Get Referral Settings
+   Url : get_referral_settings
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+41  Name : Get Slider
+   Url : get_slider
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+42  Name : Get upcoming matches
+   Url : get_upcoming_matches
+   Method : map
+   Params : -
+   Headers Params : -
+
+--------------------------------------
+
+
+
+43  Name : Get matches
+   Url : get_matches/:match_progress
+   Method : map
+   Params : match_progress(mandatory)(F=>Upcoming matches, L=>Live matches, R=>Completed and Aboundent matches)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+44  Name : Get match score
+   Url : get_match_score/:match_unique_id
+   Method : map
+   Params : match_unique_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+45  Name : Get match players
+   Url : get_match_players/:match_id
+   Method : map
+   Params : match_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+46  Name : Get match Contest
+   Url : get_match_contest/:match_id/:match_unique_id
+   Method : map
+   Params : match_id(mandatory), match_unique_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+47  Name : Get Already Created Team Count
+   Url : get_already_created_team_count/:match_unique_id
+   Method : map
+   Params : match_unique_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+48  Name : Get Contest Winner Breakup
+   Url : get_contest_winner_breakup/:contest_id
+   Method : map
+   Params : contest_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+49  Name : Get match Contest Detail
+   Url : get_match_contest_detail/:match_contest_id/:match_unique_id
+   Method : map
+   Params : match_contest_id(mandatory), match_unique_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+50  Name : Get match private Contest Detail
+   Url : get_match_private_contest_detail/:slug
+   Method : map
+   Params : slug(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+51  Name : Get match private Contest Detail
+   Url : get_match_private_contest_detail/:slug/:match_unique_id
+   Method : map
+   Params : slug(mandatory), match_unique_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+52  Name : Get match Contest share Detail
+   Url : get_match_contest_share_detail/:slug
+   Method : map
+   Params : slug(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+53  Name : Get match Contest Pdf
+   Url : get_match_contest_pdf/:match_contest_id/:match_unique_id
+   Method : map
+   Params : match_contest_id(mandatory), match_unique_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+54  Name : Get Contest Teams
+   Url : get_contest_teams/:match_unique_id/:match_contest_id
+   Method : map
+   Params : match_unique_id(mandatory), match_contest_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+55  Name : Get Contest Teams Pages
+   Url : get_contest_teams/:match_unique_id/:match_contest_id/:page_no
+   Method : map
+   Params : match_unique_id(mandatory), match_contest_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+56  Name : Create Customer Team
+   Url : create_customer_team
+   Method : post
+   Params : match_unique_id(mandatory),player_json(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+57  Name : Update Customer Team
+   Url : update_customer_team
+   Method : post
+   Params : match_unique_id(mandatory), customer_team_id(mandatory), player_json(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+58  Name : Get Customer match teams
+   Url : get_customer_match_teams/:match_unique_id
+   Method : map
+   Params : match_unique_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+59  Name : Get Customer match team detail
+   Url : get_customer_match_team_detail/:customer_team_id
+   Method : map
+   Params : customer_team_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+60  Name : Get Customer match team Stats
+   Url : get_customer_match_team_stats/:customer_team_id
+   Method : map
+   Params : customer_team_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+61  Name : Customer Pre Join contest
+   Url : customer_pre_join_contest
+   Method : post
+   Params : match_unique_id(mandatory), match_contest_id(mandatory), entry_fees(optional), customer_team_ids(optional)(comma seperated)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+62  Name : Customer Join contest
+   Url : customer_join_contest
+   Method : post
+   Params : match_unique_id(mandatory), match_contest_id(mandatory), customer_team_id(mandatory), entry_fees(optional)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+63  Name : Customer Switch Team
+   Url : customer_switch_team
+   Method : post
+   Params : match_unique_id(mandatory), match_contest_id(mandatory), customer_team_id_old(mandatory), customer_team_id_new(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+64  Name : Get Customer matches
+   Url : get_customer_matches/:match_progress
+   Method : map
+   Params : match_progress (mandatory)(F=>Upcoming matches, L=>Live matches, R=>Completed and Aboundent matches)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+65  Name : Get customer match Contest
+   Url : get_customer_match_contest/:match_id/:match_unique_id
+   Method : map
+   Params : match_id(mandatory), match_unique_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+66  Name : Get series by Player Statistics
+   Url : get_series_by_player_statistics/:match_unique_id/:player_unique_id
+   Method : map
+   Params : match_unique_id(mandatory), player_unique_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+67  Name : Get Match Dream team detail
+   Url : get_match_dream_team_detail/:match_unique_id
+   Method : map
+   Params : match_unique_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+68  Name : Get  match dream team Stats
+   Url : get_match_dream_team_stats/:match_unique_id
+   Method : map
+   Params : match_unique_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+69  Name : Get Match players stats
+   Url : get_match_players_stats/:match_unique_id
+   Method : map
+   Params : match_unique_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+70  Name : paytm Payment gateway return and notify
+   Url : paytm_wallet_callback
+   Method : post
+   Params : -
+   Headers Params : -
+
+--------------------------------------
+
+
+
+71  Name : razorpay Payment gateway return and notify
+   Url : razorpay_wallet_callback
+   Method : post
+   Params : -
+   Headers Params : -
+
+--------------------------------------
+
+
+
+72  Name : Payment gateway return and notify
+   Url : wallet_callback_addcash
+   Method : post
+   Params : -
+   Headers Params : -
+
+--------------------------------------
+
+
+
+73  Name : Payment gateway return and notify
+   Url : wallet_callback_lowaddcash
+   Method : post
+   Params : -
+   Headers Params : -
+
+--------------------------------------
+
+
+
+74  Name : get private contest setttings
+   Url : get_private_contest_settings
+   Method : post
+   Params : 
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+75  Name : get private contest entry fee
+   Url : get_private_contest_entry_fee
+   Method : post
+   Params : contest_size(mandatory),prize_pool(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+76  Name : choose winning breakup
+   Url : get_private_contest_winning_breakup
+   Method : post
+   Params : contest_size(mandatory),prize_pool(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+77  Name : Create private contest
+   Url : create_private_contest
+   Method : post
+   Params : contest_size(mandatory),prize_pool(mandatory),match_id(mandatory),winning_breakup_id(mandatory),match_unique_id(mandatory),is_multiple(mandatory)(Y,N),team_id(mandatory),pre_join(mandatory)(Y,N)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+78  Name : follow unfollow Customer
+   Url : follow_unfollow_customer
+   Method : post
+   Params : following_id(mandatory),type(mandatory)(FOLLOW,UNFOLLOW)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+79  Name : Get customer profile
+   Url : get_customer_profile
+   Method : post
+   Params : customer_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+80  Name : Get customers
+   Url : get_customers
+   Method : post
+   Params : customer_id(mandatory),type(mandatory)(FL,FI), page_no(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+81  Name : Create Post
+   Url : create_post
+   Method : post
+   Params : team_id(mandatory),post_type(mandatory),description(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+82  Name : Get reactions
+   Url : get_reactions
+   Method : map
+   Params : 
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+83  Name : React Post
+   Url : react_post
+   Method : post
+   Params : post_id(mandatory),reaction_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+84  Name : Get customer posts
+   Url : get_customer_posts
+   Method : post
+   Params : post_id(optional),customer_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+85  Name : Get customer posts user reaction
+   Url : get_customer_posts_user_reaction
+   Method : post
+   Params : post_id(mandatory),reaction_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+86  Name : Get customer feeds
+   Url : get_customer_feeds
+   Method : post
+   Params : page_no
+   Headers Params : lang(mandatory), device-id(mandatory), token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+87  Name : Get Series
+   Url : get_series
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory),token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+88  Name : Get Series Leaderboard
+   Url : get_series_leaderboard
+   Method : post
+   Params : page_no(mandatory), series_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory),token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+89  Name : Get Series Leaderboard Customer Matches
+   Url : get_series_leaderboard_customer_matches
+   Method : post
+   Params : series_id(mandatory), customer_id(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory),token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+90  Name : Get App Custom Icon
+   Url : get_app_custom_icons
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+91  Name : Get Quotations
+   Url : get_quotations
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+92  Name : Get Games
+   Url : get_games
+   Method : map
+   Params : -
+   Headers Params : lang(mandatory), device-id(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+93  Name : Apply promocode
+   Url : apply_promocode
+   Method : post
+   Params : promocode(mandatory),amount(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory),token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
+
+94  Name : Create Customer Enquiry
+   Url : create_customer_enquiry
+   Method : post
+   Params : subject(mandatory),message(mandatory)
+   Headers Params : lang(mandatory), device-id(mandatory),token(mandatory), devicetype(mandatory), deviceinfo(mandatory), appinfo(mandatory)
+
+--------------------------------------
+
+
